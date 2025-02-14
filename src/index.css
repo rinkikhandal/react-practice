@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  button {
+    @apply cursor-pointer;
+  }
+
+  .moon {
+    backdrop-filter: drop-shadow(3px 2px 291px 38px rgba(163, 216, 244, 0.75));
+  }
+
+  .sun {
+    backdrop-filter: drop-shadow(3px 2px 291px 38px rgba(244, 244, 109, 0.75));
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
